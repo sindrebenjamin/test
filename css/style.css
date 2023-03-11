@@ -122,8 +122,12 @@ h2 {
     font-size: clamp(1.25rem, 0.2641rem + 4.9296vw, 3rem);
 }
 
-.toph2 {
+/* .toph2 {
     margin-top: -1rem;
+} */
+
+.om-meg-wrapper p {
+    margin-bottom: 1rem;
 }
 
 .title {
@@ -136,6 +140,7 @@ h2 {
 
 .img-container {
     position: relative;
+    margin-bottom: 1rem;
 }
 
 
@@ -337,19 +342,6 @@ h2 {
 }
 
 
-/* Bowser Operators */
-
-.hidden {
-    display: none;
-}
-
-.inactive {
-    opacity: 0.5;
-}
-
-.inactive:hover {
-    opacity: 1;
-}
 
 
 
@@ -360,9 +352,22 @@ h2 {
     gap: 4rem;
 }
 
+.readme-container {
+    display: flex;
+    height: 100%;
+}
+
 .readme-file {
     padding: 4rem;
+
 }
+
+.readme-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Thumbnail */
 
@@ -461,7 +466,7 @@ button {
     border: none;
     border-radius: 9px;
     background-color: #562E76;
-    color: white;
+    color: var(--maincolor300);
     font-family: var(--paragraph-font);
     font-weight: bold;
     transition: 0.2s;
@@ -510,61 +515,6 @@ button:hover {
 
 
 
-
-@media (max-width: 980px) {
-     
-
-    .readme-file {
-        padding: 2rem;
-    }
-
-
-/* Thumbnail and text */
-
-
-.img-container-readme {
-    margin-bottom: 2rem;
-   
-}
-
-
-    .thumbnail-container {
-        position: relative;
-        left: 0rem;
-        top: 0rem;
-        height: fit-content;
-    }
-    
-
-    .readme-text-and-image {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2rem
-    }
-
-
-    .thumbnail {
-        width: 100%;
-        display: block;
-    }
-    
-    .thumbnail-layer {
-        width: 100%;
-        height: 100%;
-
-    }
-    
-    .picture-frame-readme {
-        display: none;
-    
-    }
-
-    
-
-
-}
-
-
 @media (max-width: 1200px) {
 
     header {
@@ -594,9 +544,53 @@ button:hover {
        opacity: 1;
    }
 
+   .readme-file {
+    padding: 2rem;
+}
+
+
    .portfolio-description {
        margin-bottom: 1rem;
    }
+
+   
+   .readme-text-and-image {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem
+}
+
+.img-container-readme {
+    margin-bottom: 2rem;
+   
+}
+
+
+    .thumbnail-container {
+        position: relative;
+        left: 0rem;
+        top: 0rem;
+        height: fit-content;
+    }
+    
+
+
+    .thumbnail {
+        width: 100%;
+        display: block;
+    }
+    
+    .thumbnail-layer {
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .picture-frame-readme {
+        display: none;
+    
+    }
+
 
    .browser-header-top,
    .browser-header-bottom,
@@ -674,28 +668,30 @@ button:hover {
 }
 
 
- @media (max-height: 990px) {
+@media (max-height: 950px) {
 
     .om-meg-wrapper {
-        height: 125vh;
-    
+        height: fit-content;
+        display: block;
     }
-    
+
+    .portfolio-wrapper,
+    .kontakt-wrapper {
+        height: fit-content;
+    }
 }
 
 
-@media (max-height: 800px) {
+/* Bowser Operators */
 
-    .om-meg-wrapper {
-        height: 150vh;
-   
-    }
-    
+.hidden {
+    display: none;
 }
 
-@media (max-height: 650px) {
-    .om-meg-wrapper {
-        height: 200vh;
-        margin-bottom: -4rem
-    }
+.inactive {
+    opacity: 0.5;
+}
+
+.inactive:hover {
+    opacity: 1;
 }
