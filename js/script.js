@@ -1,9 +1,15 @@
 const body = document.querySelector("body");
+const mobileLinks = document.querySelectorAll(".mobile-link");
 const mobileNav = document.querySelector(".mobile-nav-wrapper");
 const menuBtn = document.querySelector(".menu-btn");
 const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
 let menuOpen = false;
 
+mobileLinks.forEach(function(link) {
+    link.onclick = function() {
+        toggleMenu();
+    }
+})
 
 mobileNavOverlay.onclick = function() {
     toggleMenu();
