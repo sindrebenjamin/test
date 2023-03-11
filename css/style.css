@@ -131,7 +131,7 @@ h2 {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.4286rem + 2.8571vw, 1.5rem);
     font-weight: bold;
     font-family: var(--paragraph-font);
     color: var(--maincolor600);
@@ -413,38 +413,6 @@ h2 {
 }
 
 
-/* Thumbnail Vertical */
-
-.thumbnail-vertical {
-    filter: grayscale(100%);
-    transition: 0.2s ease-out;
-    height: 200px;
-    border-radius: 5px;
-}
-
-.thumbnail-layer-vertical {
-    height: 200px;
-    width: 112.5px;
-    background-color: var(--maincolor700);
-    position: absolute;
-    z-index: 1;
-    opacity: 0.2;
-    border-radius: 5px;
-}
-
-.picture-frame-readme-vertical {
-    background-color: var(--maincolor700);
-    height: 200px;
-    width: 112.5px;
-    border-radius: 5px;
-
-}
-
-.img-container-readme:hover .thumbnail-vertical{
-    filter: none;
-}
-
-
 
 
 /* README Text og Button */
@@ -651,6 +619,10 @@ button:hover {
 
     section {
         padding: 25px;
+    }
+
+    button {
+        width: 100%;
     }
 
   .top-folder {

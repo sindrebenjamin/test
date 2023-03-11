@@ -4,7 +4,41 @@
     font-size: 2rem;
     font-weight: 400;
     user-select: none;
+    display: none;
 }
+
+
+.logo-container {
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--maincolor300);
+    transform: rotate(-45deg);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: 0.2s ease-in;
+    text-decoration: none;
+}
+
+.logo-container:hover {
+    background-color: var(--maincolor300);
+}
+
+.logo-container:hover .logo-text {
+    color: var(--maincolor800);
+}
+
+.logo-text {
+    color: var(--maincolor300);
+    font-size: 1rem;
+    font-family: var(--heading2-font);
+    transform: rotate(45deg);
+    font-weight: bold;
+}
+
+
 
 header {
     align-items: center;
@@ -106,11 +140,7 @@ nav a:hover::after {
 .menu-btn-burger,
 .menu-btn-burger::before,
 .menu-btn-burger::after {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    transition: all .5s ease-in-out;
-    border-radius: 5px;
+
     display: none;
 }
 
@@ -163,8 +193,8 @@ nav a:hover::after {
     .menu-btn-burger::after {
         width: 25px;
         height: 3px;
-        background-color: #fff;
-        transition: all .5s ease-in-out;
+        background-color: var(--maincolor300);
+        transition: all .2s ease-in-out;
         border-radius: 5px;
         display: block;
     }
