@@ -31,8 +31,26 @@ function toggleMenu() {
     }
     
     mobileNav.classList.toggle("open-menu");
+    mobileNavOverlay.classList.toggle("open-overlay");
 }
 
+
+//Portfolio animation
+
+/*
+window.addEventListener("scroll", function() {
+
+    const portfolioID = document.querySelector("#om-meg");
+    const portfolioOffset = portfolioID.offsetTop;
+    const currentScroll = window.pageYOffset;
+
+    if(currentScroll >= portfolioOffset) {
+        console.log("hello");
+    }
+
+})
+
+*/
 
 
 //Portfolio

@@ -200,7 +200,7 @@ h2 {
 
 .portfolio-description {
     margin-bottom: 4rem;
-    max-width: 500px;
+    max-width: 680px;
 }
 
 
@@ -480,7 +480,9 @@ button:hover {
     display: none;
 }
 
-
+.mobile-portfolio-info {
+    display: none;
+}
 
 
 @media (max-width: 1200px) {
@@ -492,6 +494,14 @@ button:hover {
 
 @media (max-width: 888px) {
    
+    .mobile-portfolio-info {
+        display: block;
+    }
+
+    .desktop-portfolio-info {
+        display: none;
+    }
+    
     
     header {
         padding: 2rem 50px;
